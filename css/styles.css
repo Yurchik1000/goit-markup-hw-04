@@ -154,13 +154,7 @@ gap: 24px;
 }
 
 .hero-icon-index {
-width: 264px;
-display: flex;
-justify-content: center;
-background-color: #F4F4FD;
-border-radius: 4px;
-padding: 24px 100px;
-margin-bottom: 8px;
+
 }
 
 .hero-item-index{
@@ -235,15 +229,18 @@ border-color: transparent;
 
 .hero-index-btn:hover,
 .hero-index-btn:focus {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
-    0px 1px 1px rgba(46, 47, 66, 0.16), 
-    0px 2px 1px rgba(46, 47, 66, 0.08); 
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
+0px 1px 1px rgba(46, 47, 66, 0.16), 
+0px 2px 1px rgba(46, 47, 66, 0.08); 
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
 color: #FFFFFF;
 background-color: var(--primary-btn);
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+0px 2px 1px rgba(0, 0, 0, 0.08),
+0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .hero-headline {
@@ -287,6 +284,17 @@ margin: 0 auto;
 }
 
 .our-goal-icon{}
+
+.our-icon {
+width: 264px;
+height: 112px;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #F4F4FD;
+border-radius: 4px;
+margin-bottom: 8px;
+}
 
 /* -----What-index----- */
 
@@ -346,11 +354,16 @@ align-items: center;
 justify-content: center;
 }
 
+.our-soc-link:hover,
+.our-soc-link:focus {
+background-color: #404BBF;
+}
+
 /* -----customers----- */
 
 .customers {
-    padding-top: 130px;
-    padding-bottom: 120px;
+padding-top: 130px;
+padding-bottom: 120px;
 }
 
 .customers-title {
@@ -380,11 +393,20 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
-.customers-link:hover {
+
+.customers-icon{
+fill: #8e8f99;
+}
+
+.customers-link:hover,
+.customers-link:focus {
 border-color:var(--primary-btn);
 }
 
 .customers-link:hover .customers-icon{
+fill:var(--primary-btn);
+}
+.customers-link:focus .customers-icon{
 fill:var(--primary-btn);
 }
 
@@ -394,7 +416,10 @@ fill:var(--primary-btn);
 padding-top: 100px;
 padding-bottom: 100px;
 background-color:#2E2F42;
-display: flex;
+}
+
+.flex {
+    display: flex;
 }
 
 .footer-logo {
@@ -416,10 +441,10 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: #E7E9FC;
 width: 264px;
-padding-top: 16px;
 }
 
 .social {
+margin-left: 120px;
 }
 .social-text {
 font-weight: 500;
@@ -448,6 +473,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
 background-color: #31D0AA;
 }
